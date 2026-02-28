@@ -1,17 +1,17 @@
 # 哔哩下载姬new
 
 <p align="center">
-    <a href="https://github.com/leiurayer/downkyi/stargazers" style="text-decoration:none" >
-        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/leiurayer/downkyi">
+    <a href="https://github.com/zhaibingye/downkyi-new/stargazers" style="text-decoration:none" >
+        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/zhaibingye/downkyi-new">
     </a>
-    <a href="https://github.com/leiurayer/downkyi/network" style="text-decoration:none" >
-        <img alt="GitHub forks" src="https://img.shields.io/github/forks/leiurayer/downkyi">
+    <a href="https://github.com/zhaibingye/downkyi-new/network" style="text-decoration:none" >
+        <img alt="GitHub forks" src="https://img.shields.io/github/forks/zhaibingye/downkyi-new">
     </a>
-    <a href="https://github.com/leiurayer/downkyi/issues" style="text-decoration:none">
-        <img alt="GitHub issues" src="https://img.shields.io/github/issues/leiurayer/downkyi">
+    <a href="https://github.com/zhaibingye/downkyi-new/issues" style="text-decoration:none">
+        <img alt="GitHub issues" src="https://img.shields.io/github/issues/zhaibingye/downkyi-new">
     </a>
-    <a href="https://github.com/leiurayer/downkyi/blob/main/LICENSE" style="text-decoration:none" >
-        <img alt="GitHub" src="https://img.shields.io/github/license/leiurayer/downkyi">
+    <a href="https://github.com/zhaibingye/downkyi-new/blob/main/LICENSE" style="text-decoration:none" >
+        <img alt="GitHub" src="https://img.shields.io/github/license/zhaibingye/downkyi-new">
     </a>
 </p>
 
@@ -25,13 +25,13 @@
 
 <p align="left">
     <a href="https://github.com/zhaibingye/downkyi-new/releases/latest" style="text-decoration:none">
-       <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/leiurayer/downkyi">
+       <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/zhaibingye/downkyi-new">
     </a>
     <a href="https://github.com/zhaibingye/downkyi-new/releases/latest" style="text-decoration:none">
-       <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/leiurayer/downkyi">
+       <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/zhaibingye/downkyi-new">
     </a>
     <a href="https://github.com/zhaibingye/downkyi-new/releases" style="text-decoration:none">
-       <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/leiurayer/downkyi/total">
+       <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/zhaibingye/downkyi-new/total">
     </a>
 </p>
 
