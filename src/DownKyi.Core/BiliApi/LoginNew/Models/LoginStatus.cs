@@ -17,7 +17,6 @@ namespace DownKyi.Core.BiliApi.LoginNew.Models
     {
         [JsonProperty("url")] public string Url { get; set; }
         [JsonProperty("refresh_token")] public string RefreshToken { get; set; }
-        [JsonProperty("timestamp")] public long Timestamp { get; set; }
         [JsonProperty("code")] public int Code { get; set; }
         [JsonProperty("message")] public string Message { get; set; }
     }

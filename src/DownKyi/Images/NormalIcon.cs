@@ -1,4 +1,6 @@
-﻿namespace DownKyi.Images
+﻿using DownKyi.ViewModels.UserSpace;
+
+namespace DownKyi.Images
 {
     public class NormalIcon
     {

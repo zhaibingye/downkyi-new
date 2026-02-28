@@ -1,7 +1,7 @@
 ﻿using DownKyi.Core.BiliApi.Users;
 using DownKyi.Core.BiliApi.Users.Models;
-using DownKyi.Core.Settings;
 using DownKyi.Core.Settings.Models;
+using DownKyi.Core.Settings;
 using DownKyi.Core.Storage;
 using DownKyi.CustomControl;
 using DownKyi.ViewModels.PageViewModels;

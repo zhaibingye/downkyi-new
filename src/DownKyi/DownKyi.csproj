@@ -579,16 +579,16 @@
     <Resource Include="Resources\default_header.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Brotli.Core\Brotli.Core.csproj">
-      <Project>{3107CD63-E257-455E-AE81-1FD3582B067A}</Project>
-      <Name>Brotli.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DownKyi.Core\DownKyi.Core.csproj">
       <Project>{4fde0364-f65b-4812-bfe8-34e886624fbd}</Project>
       <Name>DownKyi.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\packages\Brotli.NET.2.1.1\runtimes\win\native\*.*">
+      <Link>%(FileName)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Resource Include="Resources\login\login_top_bar.png" />
     <Resource Include="Resources\login\qrcode_login_2233.png" />
     <Resource Include="Resources\login\qrcode_login_tip.png" />

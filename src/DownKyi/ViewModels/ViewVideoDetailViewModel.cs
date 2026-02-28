@@ -18,7 +18,9 @@ using Prism.Services.Dialogs;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
@@ -186,18 +188,16 @@ namespace DownKyi.ViewModels
         /// <summary>
         /// 搜索视频输入事件
         /// </summary>
-        private async void ExcuteInputSearchCommand()
-        {
+        private async void ExcuteInputSearchCommand() {
             await Task.Run(() =>
             {
                 if (InputSearchText == null || InputSearchText == string.Empty)
                 {
-                    foreach (VideoSection section in VideoSections)
-                    {
-                        var cache = CaCheVideoSections.FirstOrDefault(e => e.Id == section.Id);
-                        if (cache != null)
+                    foreach (VideoSection section in VideoSections) {
+                        var cache= CaCheVideoSections.FirstOrDefault(e=>e.Id==section.Id);
+                        if (cache!=null)
                         {
-                            section.VideoPages = cache.VideoPages;
+                            section.VideoPages=cache.VideoPages;
                         }
                     }
                 }
@@ -211,7 +211,7 @@ namespace DownKyi.ViewModels
                             var pages = cache.VideoPages.Where(e => e.Name.Contains(InputSearchText)).ToList();
                             section.VideoPages = pages;
                         }
-
+                       
                     }
                 }
             });

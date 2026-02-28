@@ -204,6 +204,12 @@ namespace DownKyi.Core.Downloader
                                     }, null);
                                 }
 
+                                // 检查等待标志，如果为 true 则暂停下载
+                                while (_wait)
+                                {
+                                    Thread.Sleep(100);
+                                }
+
                                 if (Stopped || (RangeAllowed && _totalBytesRead == ContentLength))
                                 {
                                     break;

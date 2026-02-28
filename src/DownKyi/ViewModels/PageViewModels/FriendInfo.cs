@@ -1,4 +1,5 @@
-﻿using DownKyi.Utils;
+﻿using DownKyi.Core.BiliApi.BiliUtils;
+using DownKyi.Utils;
 using Prism.Commands;
 using Prism.Events;
 using Prism.Mvvm;

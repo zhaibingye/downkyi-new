@@ -53,8 +53,6 @@ namespace DownKyi.Core.BiliApi
 
                 request.UserAgent = SettingsManager.GetInstance().GetUserAgent();
 
-                request.Accept = "application/json, text/plain, */*";
-
                 //request.ContentType = "application/json,text/html,application/xhtml+xml,application/xml;charset=UTF-8";
                 request.Headers["accept-language"] = "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7";
                 request.Headers["accept-encoding"] = "gzip, deflate, br";

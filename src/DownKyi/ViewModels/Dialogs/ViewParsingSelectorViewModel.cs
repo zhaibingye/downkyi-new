@@ -2,6 +2,8 @@
 using DownKyi.Utils;
 using Prism.Commands;
 using Prism.Services.Dialogs;
+using System;
+using System.Windows;
 
 namespace DownKyi.ViewModels.Dialogs
 {

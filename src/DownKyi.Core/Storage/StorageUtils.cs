@@ -18,6 +18,14 @@ namespace DownKyi.Core.Storage
         /// <returns></returns>
         public static bool DownloadImage(string url, string localFile)
         {
+            // 检查URL是否为空
+            if (string.IsNullOrEmpty(url))
+            {
+                Utils.Debugging.Console.PrintLine("DownloadImage() URL为空");
+                LogManager.Error("StorageUtils", new ArgumentException("URL不能为空"));
+                return false;
+            }
+
             try
             {
                 WebClient mywebclient = new WebClient();

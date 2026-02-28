@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace DownKyi.Core.BiliApi.Bangumi.Models
 {
-    public class BangumiArea : BaseModel
+   public class BangumiArea : BaseModel
     {
         [JsonProperty("id")]
         public int Id { get; set; }

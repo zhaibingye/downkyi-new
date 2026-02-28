@@ -1,5 +1,4 @@
 ﻿
-using DownKyi.Core.BiliApi.Login;
 using DownKyi.Core.Logging;
 using DownKyi.Events;
 using DownKyi.Images;
@@ -12,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media.Imaging;
+using DownKyi.Core.BiliApi.Login;
 using LoginQR = DownKyi.Core.BiliApi.LoginNew.LoginQR;
 
 namespace DownKyi.ViewModels
@@ -103,11 +103,7 @@ namespace DownKyi.ViewModels
             try
             {
                 var loginUrl = LoginQR.GetLoginUrl();
-                if (loginUrl == null)
-                {
-                    eventAggregator.GetEvent<MessageEvent>().Publish("获取登录二维码失败，请检查网络连接");
-                    return;
-                }
+                if (loginUrl == null) { return; }
 
                 if (loginUrl.Code != 0)
                 {

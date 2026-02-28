@@ -1,10 +1,11 @@
-﻿using DownKyi.Core.BiliApi.LoginNew.Models;
-using DownKyi.Core.Logging;
-using Newtonsoft.Json;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Media.Imaging;
+using DownKyi.Core.BiliApi.LoginNew.Models;
+using DownKyi.Core.Logging;
+using Newtonsoft.Json;
 
 namespace DownKyi.Core.BiliApi.LoginNew
 {
@@ -17,7 +18,7 @@ namespace DownKyi.Core.BiliApi.LoginNew
         public static LoginUrlOrigin GetLoginUrl()
         {
             string getLoginUrl = "https://passport.bilibili.com/x/passport-login/web/qrcode/generate";
-            string response = WebClient.RequestWeb(getLoginUrl, "https://passport.bilibili.com");
+            string response = WebClient.RequestWeb(getLoginUrl);
             Console.Out.WriteLine(response);
             try
             {
@@ -54,7 +55,7 @@ namespace DownKyi.Core.BiliApi.LoginNew
                 return null;
             }
         }
-
+        
         /// <summary>
         /// 获得登录二维码
         /// </summary>
@@ -82,7 +83,7 @@ namespace DownKyi.Core.BiliApi.LoginNew
         public static BitmapImage GetLoginQRCode(string url)
         {
             // 设置的参数影响app能否成功扫码
-            // 版本-1表示自动选择，解决B站URL过长导致固定版本10（119字节限制）生成失败的问题
+            // version设为-1表示自动选择版本，避免URL过长导致生成失败
             Bitmap qrCode = Utils.QRCode.EncodeQRCode(url, -1, 10, null, 0, 0, false);
 
             MemoryStream ms = new MemoryStream();
