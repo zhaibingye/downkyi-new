@@ -1,4 +1,19 @@
-# 哔哩下载姬new
+# 哔哩下载姬new（已归档）
+
+> [!IMPORTANT]
+> **本仓库已停止维护，后续开发转至新项目 [biload](https://github.com/zhaibingye/biload)。**
+>
+> biload 由 **烨染霜华** 开发，支持 Windows、Linux、macOS 和 Android。
+>
+> **[前往 biload 项目主页](https://github.com/zhaibingye/biload) · [下载 biload 最新版本](https://github.com/zhaibingye/biload/releases/latest)**
+>
+> 本仓库仅作为历史存档保留。新版本、使用说明和问题反馈请前往 biload。
+
+[![biload 跨平台视频下载工作台](https://raw.githubusercontent.com/zhaibingye/biload/main/docs/images/desktop-home.png)](https://github.com/zhaibingye/biload)
+
+---
+
+## 以下为历史项目文档
 
 <p align="center">
     <a href="https://github.com/zhaibingye/downkyi-new/stargazers" style="text-decoration:none" >
